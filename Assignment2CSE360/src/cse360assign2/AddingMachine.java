@@ -15,6 +15,7 @@ package cse360assign2;
 
 public class AddingMachine {
 	private int total;
+	private String totalString;
 	
 	
 	/**
@@ -24,7 +25,8 @@ public class AddingMachine {
 	 * @param None
 	 */
 	public AddingMachine () {
-		total = 0;  // not needed - included for clarity
+		total = 0; 
+		totalString = "0";
 	}
 	
 	/**
@@ -34,7 +36,7 @@ public class AddingMachine {
 	 */
 	
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	/**
@@ -43,6 +45,8 @@ public class AddingMachine {
 	 * @return void
 	 */
 	public void add (int value) {
+		total = total + value;
+		totalString = totalString + " + " + value;
 		
 	}
 	
@@ -53,7 +57,8 @@ public class AddingMachine {
 	 */
 	
 	public void subtract (int value) {
-		
+		total = total - value;
+		totalString = totalString + " - " + value;
 	}
 		
 	/**
@@ -71,7 +76,7 @@ public class AddingMachine {
 	 */
 	
 	public String toString () {
-		return "";
+		return totalString;
 	}
 
 	/**I think this method is similar to the clear method on your calculator.
@@ -82,6 +87,8 @@ public class AddingMachine {
 	 */
 	
 	public void clear() {
+		total = 0; 
+		totalString = "0";
 		
 	}
 }
