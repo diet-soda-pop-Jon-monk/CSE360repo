@@ -10,6 +10,7 @@ package cse360assign2;
  *and return the history of a calculation to the screen. This
  *is the commented version of this assignment and will be 
  *completed in another version of this same assignment.
+ *
  */
 
 public class AddingMachine {
@@ -81,6 +82,8 @@ public class AddingMachine {
 	 */
 	
 	public void clear() {
+		
+		System.out.println("test 1");
 	
 	}
 }
