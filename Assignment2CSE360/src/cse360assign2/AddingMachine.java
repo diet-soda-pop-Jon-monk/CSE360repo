@@ -83,7 +83,5 @@ public class AddingMachine {
 	
 	public void clear() {
 		
-		System.out.println("test 1 + 1");
-	
 	}
 }
