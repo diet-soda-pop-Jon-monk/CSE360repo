@@ -1,4 +1,4 @@
-package cse360assign2;
+package cse360assign3;
 
 /**
  *Author Name: Jonathan Monk
@@ -14,13 +14,13 @@ package cse360assign2;
  */
 
 public class AddingMachine {
-	private int total;
-	private String totalString;
+	protected int total;
+	protected String totalString;
 	
 	
 	/**
 	 * constructor takes no parameters and sets up one private
-	 * class atribute of type int called total. total is set initialy
+	 * class attribute of type int called total. total is set initialy
 	 * to zero
 	 * @param None
 	 */
